@@ -1,0 +1,12 @@
+[Inputs]
+LRCR
+PCCR
+clk
+rst
+=mux1CR[1:0]=
+[Outputs]
+=Oi[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel IF
+

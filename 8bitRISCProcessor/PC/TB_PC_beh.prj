@@ -1,0 +1,3 @@
+verilog work "ProgramCounter.v"
+verilog work "TB_PC.v"
+verilog work "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

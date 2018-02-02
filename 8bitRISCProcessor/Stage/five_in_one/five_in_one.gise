@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="five_in_one.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_five_in_one_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TB_five_in_one_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TB_five_in_one_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TB_five_in_one_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1473421763" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1473421763">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1473421857" xil_pn:in_ck="-3325651985887195466" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1473421857">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../Adder/Adder.v"/>
+      <outfile xil_pn:name="../../Alu/Alu.v"/>
+      <outfile xil_pn:name="../../Data_Memory/Data_memory.v"/>
+      <outfile xil_pn:name="../../Decorder4_to_7/Decorder_4_to_7.v"/>
+      <outfile xil_pn:name="../../Instruction_Memory/Instrction_Memory.v"/>
+      <outfile xil_pn:name="../../MUX2_1/MUX2.v"/>
+      <outfile xil_pn:name="../../MUX4_1/MUX4_1.v"/>
+      <outfile xil_pn:name="../../OUTPORT/outport.v"/>
+      <outfile xil_pn:name="../../PC/ProgramCounter.v"/>
+      <outfile xil_pn:name="../../Register_File/Reg_file.v"/>
+      <outfile xil_pn:name="../../one-bit-register/one-bit-register.v"/>
+      <outfile xil_pn:name="../../seven_bit_reg/VII_bit_reg.v"/>
+      <outfile xil_pn:name="../../writeback/WB.v"/>
+      <outfile xil_pn:name="../EXE/EXE.v"/>
+      <outfile xil_pn:name="../ID/ID.v"/>
+      <outfile xil_pn:name="../IF/IF.v"/>
+      <outfile xil_pn:name="Five_in_one.v"/>
+      <outfile xil_pn:name="TB_five_in_one.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1473421766" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="1548636881305741421" xil_pn:start_ts="1473421766">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1473421766" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="138899807293635115" xil_pn:start_ts="1473421766">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1473421766" xil_pn:in_ck="7581928394228781736" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8290684470061672727" xil_pn:start_ts="1473421766">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/DME.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/DME.v"/>
+      <outfile xil_pn:name="ipcore_dir/INM.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/INM.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1473421860" xil_pn:in_ck="1817491962681299638" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1473421860">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="../../Adder/Adder.v"/>
+      <outfile xil_pn:name="../../Alu/Alu.v"/>
+      <outfile xil_pn:name="../../Data_Memory/Data_memory.v"/>
+      <outfile xil_pn:name="../../Decorder4_to_7/Decorder_4_to_7.v"/>
+      <outfile xil_pn:name="../../Instruction_Memory/Instrction_Memory.v"/>
+      <outfile xil_pn:name="../../MUX2_1/MUX2.v"/>
+      <outfile xil_pn:name="../../MUX4_1/MUX4_1.v"/>
+      <outfile xil_pn:name="../../OUTPORT/outport.v"/>
+      <outfile xil_pn:name="../../PC/ProgramCounter.v"/>
+      <outfile xil_pn:name="../../Register_File/Reg_file.v"/>
+      <outfile xil_pn:name="../../one-bit-register/one-bit-register.v"/>
+      <outfile xil_pn:name="../../seven_bit_reg/VII_bit_reg.v"/>
+      <outfile xil_pn:name="../../writeback/WB.v"/>
+      <outfile xil_pn:name="../EXE/EXE.v"/>
+      <outfile xil_pn:name="../ID/ID.v"/>
+      <outfile xil_pn:name="../IF/IF.v"/>
+      <outfile xil_pn:name="Five_in_one.v"/>
+      <outfile xil_pn:name="TB_five_in_one.v"/>
+      <outfile xil_pn:name="ipcore_dir/DME.v"/>
+      <outfile xil_pn:name="ipcore_dir/INM.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1473421864" xil_pn:in_ck="1817491962681299638" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5041428155418389913" xil_pn:start_ts="1473421860">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TB_five_in_one_beh.prj"/>
+      <outfile xil_pn:name="TB_five_in_one_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1473421864" xil_pn:in_ck="-8600410423073411995" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7700859824689008484" xil_pn:start_ts="1473421864">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TB_five_in_one_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>

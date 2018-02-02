@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "F:/New Processor/PC/ProgramCounter.xst" -ofn "F:/New Processor/PC/ProgramCounter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc prog_counter.ucf -p xc6slx9-csg324-3 "ProgramCounter.ngc" ProgramCounter.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ProgramCounter_map.ncd ProgramCounter.ngd ProgramCounter.pcf 
+par -w -intstyle ise -ol high -mt off ProgramCounter_map.ncd ProgramCounter.ncd ProgramCounter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml ProgramCounter.twx ProgramCounter.ncd -o ProgramCounter.twr ProgramCounter.pcf -ucf prog_counter.ucf 
+bitgen -intstyle ise -f ProgramCounter.ut ProgramCounter.ncd 
+bitgen -intstyle ise -f ProgramCounter.ut ProgramCounter.ncd 

@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/INMM.v"
+verilog work "../../PC/ProgramCounter.v"
+verilog work "../../MUX4_1/MUX4_1.v"
+verilog work "../../Instruction_Memory/Instrction_Memory.v"
+verilog work "../../Adder/Adder.v"
+verilog work "IF.v"

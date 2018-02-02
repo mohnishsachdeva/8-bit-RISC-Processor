@@ -1,0 +1,3 @@
+verilog work "../../one-bit-register/one-bit-register.v"
+verilog work "../../Alu/Alu.v"
+verilog work "EXE.v"

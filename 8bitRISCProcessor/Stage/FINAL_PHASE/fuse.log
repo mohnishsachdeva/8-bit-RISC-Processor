@@ -1,0 +1,62 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/MY New Processor/Stage/FINAL_PHASE/TB_Final_Phase_isim_beh.exe -prj E:/MY New Processor/Stage/FINAL_PHASE/TB_Final_Phase_beh.prj work.TB_Final_Phase work.glbl 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/ipcore_dir/INMM.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/ipcore_dir/DMEE.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../../seven_bit_reg/VII_bit_reg.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../../Register_File/Reg_file.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../../PC/ProgramCounter.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../../one-bit-register/one-bit-register.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../../MUX4_1/MUX4_1.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../../MUX2_1/MUX2.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../../Instruction_Memory/Instrction_Memory.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../../Decorder4_to_7/Decorder_4_to_7.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../../Alu/Alu.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../../Adder/Adder.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../../writeback/WB.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../IF/IF.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../ID/ID.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../EXE/EXE.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../../OUTPORT/outport.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../../Data_Memory/Data_memory.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../five_in_one/Five_in_one.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/../CR/CR.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/final_phase.v" into library work
+Analyzing Verilog file "E:/MY New Processor/Stage/FINAL_PHASE/TB_Final_Phase.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "E:/MY New Processor/Stage/FINAL_PHASE/../../Instruction_Memory/Instrction_Memory.v" Line 31: Size mismatch in connection of port <a>. Formal port size is 8-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module CR
+Compiling module ProgramCounter
+Compiling module Adder
+Compiling module MUX4_1
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module INMM
+Compiling module Instrction_Memory
+Compiling module IF
+Compiling module Reg_file
+Compiling module MUX2
+Compiling module ID
+Compiling module Alu
+Compiling module one_bit_register
+Compiling module EXE
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module DMEE
+Compiling module Data_memory
+Compiling module WB
+Compiling module VII_bit_reg
+Compiling module Decorder_4_to_7
+Compiling module outport
+Compiling module FIVE_IN_ONE
+Compiling module final_phase
+Compiling module TB_Final_Phase
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 18 sub-compilation(s) to finish...
+Compiled 25 Verilog Units
+Built simulation executable E:/MY New Processor/Stage/FINAL_PHASE/TB_Final_Phase_isim_beh.exe
+Fuse Memory Usage: 30564 KB
+Fuse CPU Usage: 608 ms

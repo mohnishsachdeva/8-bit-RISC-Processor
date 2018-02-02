@@ -1,0 +1,19 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o F:/New Processor/MUX4_1/TB_MUX4_1_isim_beh.exe -prj F:/New Processor/MUX4_1/TB_MUX4_1_beh.prj work.TB_MUX4_1 work.glbl 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "F:/New Processor/MUX4_1/MUX4_1.v" into library work
+Analyzing Verilog file "F:/New Processor/MUX4_1/TB_MUX4_1.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module MUX4_1
+Compiling module TB_MUX4_1
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable F:/New Processor/MUX4_1/TB_MUX4_1_isim_beh.exe
+Fuse Memory Usage: 27880 KB
+Fuse CPU Usage: 452 ms

@@ -1,0 +1,5 @@
+verilog isim_temp "../seven_bit_reg/VII_bit_reg.v"
+verilog isim_temp "../Decorder4_to_7/Decorder_4_to_7.v"
+verilog isim_temp "outport.v"
+verilog isim_temp "TB_outport.v"
+verilog isim_temp "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

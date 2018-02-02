@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "F:/New Processor/Stage/five_in_one/TB_five_in_one_isim_beh.exe" -prj "F:/New Processor/Stage/five_in_one/TB_five_in_one_beh.prj" "work.TB_five_in_one" "work.glbl" 

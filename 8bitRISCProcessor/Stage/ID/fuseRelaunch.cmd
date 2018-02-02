@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "F:/New Processor/Stage/ID/TB_ID_isim_beh.exe" -prj "F:/New Processor/Stage/ID/TB_ID_beh.prj" "work.TB_ID" "work.glbl" 

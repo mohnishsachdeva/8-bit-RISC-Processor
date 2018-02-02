@@ -1,0 +1,5 @@
+verilog work "../seven_bit_reg/VII_bit_reg.v"
+verilog work "../Decorder4_to_7/Decorder_4_to_7.v"
+verilog work "outport.v"
+verilog work "TB_outport.v"
+verilog work "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

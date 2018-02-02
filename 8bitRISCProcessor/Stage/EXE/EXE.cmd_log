@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/New Processor/Stage/EXE/EXE.xst" -ofn "F:/New Processor/Stage/EXE/EXE.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim EXE.ngc EXE_synthesis.v 

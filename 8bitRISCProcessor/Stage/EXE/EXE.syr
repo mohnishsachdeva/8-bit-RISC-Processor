@@ -1,0 +1,411 @@
+Release 14.5 - xst P.58f (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Reading design: EXE.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "EXE.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "EXE"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-csg324
+
+---- Source Options
+Top Module Name                    : EXE
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\New Processor\one-bit-register\one-bit-register.v" into library work
+Parsing module <one_bit_register>.
+Analyzing Verilog file "F:\New Processor\Alu\Alu.v" into library work
+Parsing module <Alu>.
+Analyzing Verilog file "F:\New Processor\Stage\EXE\EXE.v" into library work
+Parsing module <EXE>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <EXE>.
+
+Elaborating module <Alu>.
+WARNING:HDLCompiler:413 - "F:\New Processor\Alu\Alu.v" Line 29: Result of 32-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:413 - "F:\New Processor\Alu\Alu.v" Line 31: Result of 32-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "F:\New Processor\Alu\Alu.v" Line 33: Result of 32-bit expression is truncated to fit in 1-bit target.
+
+Elaborating module <one_bit_register>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <EXE>.
+    Related source file is "F:\New Processor\Stage\EXE\EXE.v".
+    Summary:
+	no macro.
+Unit <EXE> synthesized.
+
+Synthesizing Unit <Alu>.
+    Related source file is "F:\New Processor\Alu\Alu.v".
+    Found 9-bit subtractor for signal <GND_2_o_GND_2_o_sub_20_OUT> created at line 31.
+    Found 9-bit adder for signal <_n0093> created at line 31.
+    Found 32-bit 7-to-1 multiplexer for signal <_n0096> created at line 31.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   3 Multiplexer(s).
+Unit <Alu> synthesized.
+
+Synthesizing Unit <one_bit_register>.
+    Related source file is "F:\New Processor\one-bit-register\one-bit-register.v".
+    Found 1-bit register for signal <out>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <one_bit_register> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 2
+ 1-bit register                                        : 2
+# Multiplexers                                         : 3
+ 32-bit 2-to-1 multiplexer                             : 2
+ 32-bit 7-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 9-bit adder                                           : 1
+ 9-bit subtractor                                      : 1
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Multiplexers                                         : 3
+ 32-bit 2-to-1 multiplexer                             : 2
+ 32-bit 7-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <EXE> ...
+
+Optimizing unit <Alu> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block EXE, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : EXE.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 81
+#      GND                         : 1
+#      LUT2                        : 23
+#      LUT3                        : 1
+#      LUT4                        : 1
+#      LUT6                        : 21
+#      MUXCY                       : 16
+#      VCC                         : 1
+#      XORCY                       : 17
+# FlipFlops/Latches                : 2
+#      FDRE                        : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 33
+#      IBUF                        : 23
+#      OBUF                        : 10
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice LUTs:                   46  out of   5720     0%  
+    Number used as Logic:                46  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     46
+   Number with an unused Flip Flop:      46  out of     46   100%  
+   Number with an unused LUT:             0  out of     46     0%  
+   Number of fully used LUT-FF pairs:     0  out of     46     0%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          34
+ Number of bonded IOBs:                  34  out of    200    17%  
+    IOB Flip Flops/Latches:               2
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRL/BUFHCEs:         1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 2     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 5.732ns
+   Maximum output required time after clock: 3.597ns
+   Maximum combinational path delay: 8.896ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 316 / 6
+-------------------------------------------------------------------------
+Offset:              5.732ns (Levels of Logic = 11)
+  Source:            Ira<0> (PAD)
+  Destination:       fregZ/out (FF)
+  Destination Clock: clk rising
+
+  Data Path: Ira<0> to fregZ/out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   0.819  Ira_0_IBUF (Ira_0_IBUF)
+     LUT2:I0->O            1   0.203   0.000  alux/Madd__n0093_lut<0> (alux/Madd__n0093_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  alux/Madd__n0093_cy<0> (alux/Madd__n0093_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  alux/Madd__n0093_cy<1> (alux/Madd__n0093_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  alux/Madd__n0093_cy<2> (alux/Madd__n0093_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  alux/Madd__n0093_cy<3> (alux/Madd__n0093_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  alux/Madd__n0093_cy<4> (alux/Madd__n0093_cy<4>)
+     XORCY:CI->O           2   0.180   0.981  alux/Madd__n0093_xor<5> (alux/_n0093<3>)
+     LUT6:I0->O            1   0.203   0.684  alux/Mmux_n005217_SW0 (N4)
+     LUT6:I4->O            1   0.203   0.684  alux/Mmux_n005217 (alux/Mmux_n005216)
+     LUT6:I4->O            1   0.203   0.000  alux/Mmux_n005218 (OFgz)
+     FDRE:D                    0.102          fregZ/out
+    ----------------------------------------
+    Total                      5.732ns (2.564ns logic, 3.168ns route)
+                                       (44.7% logic, 55.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            fregN/out (FF)
+  Destination:       IFgn (PAD)
+  Source Clock:      clk rising
+
+  Data Path: fregN/out to IFgn
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.447   0.579  fregN/out (fregN/out)
+     OBUF:I->O                 2.571          IFgn_OBUF (IFgn)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 281 / 8
+-------------------------------------------------------------------------
+Delay:               8.896ns (Levels of Logic = 14)
+  Source:            Ira<0> (PAD)
+  Destination:       OALUD<7> (PAD)
+
+  Data Path: Ira<0> to OALUD<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.222   0.819  Ira_0_IBUF (Ira_0_IBUF)
+     LUT2:I0->O            1   0.203   0.000  alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_lut<0> (alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_cy<0> (alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_cy<1> (alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_cy<2> (alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_cy<3> (alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_cy<4> (alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_cy<5> (alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_cy<6> (alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_cy<6>)
+     XORCY:CI->O           2   0.180   0.864  alux/Msub_GND_2_o_GND_2_o_sub_20_OUT_xor<7> (alux/GND_2_o_GND_2_o_sub_20_OUT<7>)
+     LUT4:I0->O            1   0.203   0.580  alux/n0039<25>2_SW0 (N2)
+     LUT6:I5->O            2   0.205   0.981  alux/n0039<25>2 (OFgn)
+     LUT6:I0->O            1   0.203   0.579  alux/n0039<25>1 (OALUD_7_OBUF)
+     OBUF:I->O                 2.571          OALUD_7_OBUF (OALUD<7>)
+    ----------------------------------------
+    Total                      8.896ns (5.073ns logic, 3.823ns route)
+                                       (57.0% logic, 43.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.25 secs
+ 
+--> 
+
+Total memory usage is 257648 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

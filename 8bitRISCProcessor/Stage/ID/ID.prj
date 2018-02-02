@@ -1,0 +1,3 @@
+verilog work "../../Register_File/Reg_file.v"
+verilog work "../../MUX2_1/MUX2.v"
+verilog work "ID.v"

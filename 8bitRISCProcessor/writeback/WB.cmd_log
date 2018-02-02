@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "F:/New Processor/writeback/WB.xst" -ofn "F:/New Processor/writeback/WB.syr" 

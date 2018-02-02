@@ -1,0 +1,3 @@
+verilog work "Decorder_4_to_7.v"
+verilog work "TB_dec.v"
+verilog work "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

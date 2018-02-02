@@ -1,0 +1,25 @@
+vhdtdtfi -lib work {F:/New Processor/Stage/FINAL_PHASE/final_phase.v} -lang verilog -prj FINAL_PHASE -o final_phase.spl -module final_phase -template C:/Xilinx/14.5/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 final_phase.spl {F:/New Processor/Stage/FINAL_PHASE/final_phase.sym} 
+vhdtdtfi -lang verilog -prj FINAL_PHASE -o "F:/New Processor/Stage/FINAL_PHASE/final_phase.tfi" -lib work "F:/New Processor/Stage/FINAL_PHASE//final_phase.v" -module final_phase -template C:/Xilinx/14.5/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+xst -intstyle ise -ifn "F:/New Processor/Stage/FINAL_PHASE/final_phase.xst" -ofn "F:/New Processor/Stage/FINAL_PHASE/final_phase.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -bm INMM.bmm -p xc6slx9-csg324-3 "final_phase.ngc" final_phase.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_phase_map.ncd final_phase.ngd final_phase.pcf 
+par -w -intstyle ise -ol high -mt off final_phase_map.ncd final_phase.ncd final_phase.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_phase.twx final_phase.ncd -o final_phase.twr final_phase.pcf 
+bitgen -intstyle ise -f final_phase.ut final_phase.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Mohnish/Downloads/single_cycle.ucf -bm INMM.bmm -p xc6slx9-csg324-3 "final_phase.ngc" final_phase.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_phase_map.ncd final_phase.ngd final_phase.pcf 
+par -w -intstyle ise -ol high -mt off final_phase_map.ncd final_phase.ncd final_phase.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_phase.twx final_phase.ncd -o final_phase.twr final_phase.pcf 
+xst -intstyle ise -ifn "F:/New Processor/Stage/FINAL_PHASE/final_phase.xst" -ofn "F:/New Processor/Stage/FINAL_PHASE/final_phase.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Mohnish/Downloads/single_cycle.ucf -bm INMM.bmm -p xc6slx9-csg324-3 "final_phase.ngc" final_phase.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_phase_map.ncd final_phase.ngd final_phase.pcf 
+par -w -intstyle ise -ol high -mt off final_phase_map.ncd final_phase.ncd final_phase.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_phase.twx final_phase.ncd -o final_phase.twr final_phase.pcf 
+bitgen -intstyle ise -f final_phase.ut final_phase.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Mohnish/Downloads/single_cycle.ucf -bm INMM.bmm -p xc6slx9-csg324-3 "final_phase.ngc" final_phase.ngd  
+map -intstyle ise -p xc6slx9-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o final_phase_map.ncd final_phase.ngd final_phase.pcf 
+par -w -intstyle ise -ol high -mt off final_phase_map.ncd final_phase.ncd final_phase.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml final_phase.twx final_phase.ncd -o final_phase.twr final_phase.pcf 
+bitgen -intstyle ise -f final_phase.ut final_phase.ncd 
+xst -intstyle ise -ifn "E:/Our 8-bit RISC Processor/Stage/FINAL_PHASE/final_phase.xst" -ofn "E:/Our 8-bit RISC Processor/Stage/FINAL_PHASE/final_phase.syr" 

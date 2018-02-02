@@ -1,0 +1,5 @@
+verilog work "../../one-bit-register/one-bit-register.v"
+verilog work "../../Alu/Alu.v"
+verilog work "EXE.v"
+verilog work "TB_EXE.v"
+verilog work "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

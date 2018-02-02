@@ -1,0 +1,23 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o F:/New Processor/Instruction_Memory/TB_IM_isim_beh.exe -prj F:/New Processor/Instruction_Memory/TB_IM_beh.prj work.TB_IM work.glbl 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "F:/New Processor/Instruction_Memory/ipcore_dir/IM.v" into library work
+Analyzing Verilog file "F:/New Processor/Instruction_Memory/Instrction_Memory.v" into library work
+Analyzing Verilog file "F:/New Processor/Instruction_Memory/TB_IM.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "F:/New Processor/Instruction_Memory/Instrction_Memory.v" Line 31: Size mismatch in connection of port <a>. Formal port size is 8-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module IM
+Compiling module Instrction_Memory
+Compiling module TB_IM
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 Verilog Units
+Built simulation executable F:/New Processor/Instruction_Memory/TB_IM_isim_beh.exe
+Fuse Memory Usage: 30108 KB
+Fuse CPU Usage: 483 ms

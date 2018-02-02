@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/New Processor/Data_Memory/Data_memory.xst" -ofn "F:/New Processor/Data_Memory/Data_memory.syr" 
+xst -intstyle ise -ifn "F:/New Processor/Data_Memory/Data_memory.xst" -ofn "F:/New Processor/Data_Memory/Data_memory.syr" 

@@ -1,0 +1,23 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o F:/New Processor/OUTPORT/TB_outport_isim_beh.exe -prj F:/New Processor/OUTPORT/TB_outport_beh.prj work.TB_outport work.glbl 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "F:/New Processor/OUTPORT/../seven_bit_reg/VII_bit_reg.v" into library work
+Analyzing Verilog file "F:/New Processor/OUTPORT/../Decorder4_to_7/Decorder_4_to_7.v" into library work
+Analyzing Verilog file "F:/New Processor/OUTPORT/outport.v" into library work
+Analyzing Verilog file "F:/New Processor/OUTPORT/TB_outport.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module VII_bit_reg
+Compiling module Decorder_4_to_7
+Compiling module outport
+Compiling module TB_outport
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 Verilog Units
+Built simulation executable F:/New Processor/OUTPORT/TB_outport_isim_beh.exe
+Fuse Memory Usage: 28180 KB
+Fuse CPU Usage: 1403 ms

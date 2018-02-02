@@ -1,0 +1,4 @@
+verilog work "ipcore_dir/IM.v"
+verilog work "Instrction_Memory.v"
+verilog work "TB_IM.v"
+verilog work "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v"

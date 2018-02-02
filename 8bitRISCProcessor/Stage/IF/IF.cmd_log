@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "F:/New Processor/Stage/IF/IF.xst" -ofn "F:/New Processor/Stage/IF/IF.syr" 
+xst -intstyle ise -ifn "F:/New Processor/Stage/IF/IF.xst" -ofn "F:/New Processor/Stage/IF/IF.syr" 
+xst -intstyle ise -ifn "F:/New Processor/Stage/IF/IF.xst" -ofn "F:/New Processor/Stage/IF/IF.syr" 
+vhdtdtfi -lib work {F:/New Processor/Stage/IF/IF.v} -lang verilog -prj IF -o IF.spl -module IF -template C:/Xilinx/14.5/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 IF.spl {F:/New Processor/Stage/IF/IF.sym} 
+xst -intstyle ise -ifn "F:/New Processor/Stage/IF/IF.xst" -ofn "F:/New Processor/Stage/IF/IF.syr" 
+xst -intstyle ise -ifn "F:/New Processor/Stage/IF/IF.xst" -ofn "F:/New Processor/Stage/IF/IF.syr" 

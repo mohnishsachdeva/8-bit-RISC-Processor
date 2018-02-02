@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/New Processor/Instruction_Memory/Instrction_Memory.xst" -ofn "F:/New Processor/Instruction_Memory/Instrction_Memory.syr" 
+xst -intstyle ise -ifn "F:/New Processor/Instruction_Memory/Instrction_Memory.xst" -ofn "F:/New Processor/Instruction_Memory/Instrction_Memory.syr" 

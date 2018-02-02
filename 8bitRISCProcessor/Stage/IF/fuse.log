@@ -1,0 +1,31 @@
+Running: C:\Xilinx\14.5\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o F:/New Processor/Stage/IF/TB_IF_isim_beh.exe -prj F:/New Processor/Stage/IF/TB_IF_beh.prj work.TB_IF work.glbl 
+ISim P.58f (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "F:/New Processor/Stage/IF/ipcore_dir/INMM.v" into library work
+Analyzing Verilog file "F:/New Processor/Stage/IF/../../PC/ProgramCounter.v" into library work
+Analyzing Verilog file "F:/New Processor/Stage/IF/../../MUX4_1/MUX4_1.v" into library work
+Analyzing Verilog file "F:/New Processor/Stage/IF/../../Instruction_Memory/Instrction_Memory.v" into library work
+Analyzing Verilog file "F:/New Processor/Stage/IF/../../Adder/Adder.v" into library work
+Analyzing Verilog file "F:/New Processor/Stage/IF/IF.v" into library work
+Analyzing Verilog file "F:/New Processor/Stage/IF/TB_IF.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.5/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "F:/New Processor/Stage/IF/../../Instruction_Memory/Instrction_Memory.v" Line 31: Size mismatch in connection of port <a>. Formal port size is 8-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module ProgramCounter
+Compiling module Adder
+Compiling module MUX4_1
+Compiling module DIST_MEM_GEN_V7_2(C_FAMILY="spar...
+Compiling module INMM
+Compiling module Instrction_Memory
+Compiling module IF
+Compiling module TB_IF
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 9 Verilog Units
+Built simulation executable F:/New Processor/Stage/IF/TB_IF_isim_beh.exe
+Fuse Memory Usage: 30288 KB
+Fuse CPU Usage: 498 ms

@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+final_phase instance_name (
+    .rst(rst), 
+    .clk(clk), 
+    .in(in), 
+    .Reg1_out(Reg1_out), 
+    .Reg2_out(Reg2_out)
+    );
+
+

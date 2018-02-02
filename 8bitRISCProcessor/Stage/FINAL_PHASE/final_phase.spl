@@ -1,0 +1,11 @@
+[Inputs]
+rst
+clk
+=in[7:0]=
+[Outputs]
+=Reg1_out[6:0]=
+=Reg2_out[6:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel final_phase
+

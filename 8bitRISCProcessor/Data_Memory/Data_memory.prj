@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/DMEE.v"
+verilog work "Data_memory.v"

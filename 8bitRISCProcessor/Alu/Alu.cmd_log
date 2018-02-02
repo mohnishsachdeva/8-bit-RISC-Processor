@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "F:/New Processor/Alu/Alu.xst" -ofn "F:/New Processor/Alu/Alu.syr" 
